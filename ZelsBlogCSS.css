@@ -180,6 +180,7 @@ img::-moz-selection {
   }
 }
 
+/*Header*/
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
@@ -279,6 +280,7 @@ header.masthead .post-heading .meta a {
   }
 }
 
+/*post portion of the body*/
 .post-preview > a {
   color: #212529;
 }
@@ -420,13 +422,9 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 footer {
-  padding: 50px 0 65px;
+  /*padding: 50px 0 65px;*/
 }
 
-footer  {
-  margin: 0;
-  padding: 0;
-}
 
 footer .copyright {
   font-size: 14px;
@@ -441,7 +439,7 @@ footer .copyright {
   /*left: 50%;*/
   margin-left: auto;
   /*margin-right: auto;*/
-  width: 61%;
+  width: 62%;
   height: 50%;
 }
 
@@ -471,10 +469,9 @@ footer .copyright {
   margin-right: 10px;
 }
 
-/*
+
 @media screen and (max-width:760px) {
   .social{
     font-size: 25px;
   }
 }
-*/
