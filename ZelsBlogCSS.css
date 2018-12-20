@@ -457,6 +457,16 @@ footer .copyright {
   color: red;
 }
 
+.click{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.JSArticle{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /*
 @media screen and (max-width:760px) {
   .social{

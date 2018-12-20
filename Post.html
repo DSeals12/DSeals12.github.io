@@ -12,6 +12,27 @@
 	<link rel="stylesheet" href="ZelsBlogCSS.css">
 
 	<title>Denzels Blog</title>
+
+  <script>
+            // show the given page, hide the rest
+            function show(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+</script>
 </head>
 <body>
 
@@ -44,8 +65,18 @@
   </div>
 </nav>
 
-	<!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://img.huffingtonpost.com/asset/5a15d92d150000bb3485981f.jpeg?cache=w78obbbce8&ops=scalefit_720_noupscale')">
+
+<!--
+<p>
+        Show page 
+            <span class="click" onclick="show('Page1');">1</span> 
+            <span class="click" onclick="show('Page2');">2</span> 
+            <span class="click" onclick="show('Page3');">3</span>
+</p>
+-->
+
+<div id="Page1" class="page" style="">
+        <header class="masthead" style="background-image: url('https://img.huffingtonpost.com/asset/5a15d92d150000bb3485981f.jpeg?cache=w78obbbce8&ops=scalefit_720_noupscale')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -55,15 +86,13 @@
               <h2 class="subheading">Learn Patience, Passion and How to Prosper</h2>
               <span class="meta" align="center">Posted by
                 <!--<a href="#">-->Denzel Seals<!--</a>-->
-                on December 19, 2018</span>
-            </div>
+                on December 19th, 2018</span>
+          </div>
           </div>
         </div>
       </div>
     </header>
-
-    <!-- Post Content -->
-    <article>
+        <article>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
@@ -112,8 +141,122 @@
         </div>
       </div>
     </article>
+    </div>
+    <div id="Page2" class="page" style="display:none">
+        <header class="masthead" style="background-image: url('https://cdn.images.express.co.uk/img/dynamic/59/590x/Netflix-898756.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>The greatest 90s shows of all time</h1>
+              <h2 class="subheading">Just know I'm right</h2>
+              <span class="meta" align="center">Posted by
+                <!--<a href="#">-->Denzel Seals<!--</a>-->
+                on December 8th, 2018</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    </div>
+  <div id="Page3" class="page" style="display:none">
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>College, is it worth it?</h1>
+              <h2 class="subheading">My thoughts on Higher Education</h2>
+              <span class="meta" align="center">Posted by
+                <!--<a href="#">-->Denzel Seals<!--</a>-->
+                on December 1st, 2018</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+</div>
+<!--
+	<!-- Page Header --> <!--
+    <header class="masthead" style="background-image: url('https://img.huffingtonpost.com/asset/5a15d92d150000bb3485981f.jpeg?cache=w78obbbce8&ops=scalefit_720_noupscale')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Post Grad Life</h1>
+              <h2 class="subheading">Learn Patience, Passion and How to Prosper</h2>
+              <span class="meta" align="center">Posted by
+                <!--<a href="#">--></span>
+ <!--           </div>
+          </div>
+        </div>
+      </div>
+    </header>
+-->
+    <!-- Post Content -->
+    <!-- Post 1-->
+    <!--
+<article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>You are walking down the runway, big smile on your face with a piece of white paper in your hand that you just received from your Dean. Undoubtedly, this is one of the greatest moments of your life to date as it should be. You go on about your day and celebrate with your family and friends. Nothing can top this moment, and as I said before it shouldn't because you have accomplished something big.</p>
 
+            <p>Now let's fast forward to two months later, you are back home just logged on to Glassdoor for the 2nd time today looking for jobs within your field that you feel seem fit. After you go back to your regular schedule (Netflix, gym, hang with friends, etc..). Everything is okay, trust me.</p>
+
+            <p>How are you feeling at the moment? Truly take a minute to think about it.</p>
+
+            <p>Let's rewind a little bit to your high school days. Simple times if you may, studying for test a couple hours before the examination. Completing pages of homework just minutes before it was due. I think I can vouch for many when I say this was our ideal stress-less life back then, but all in the same we were ready and willing to get up out that house for <b style: color= "black">FREEDOM</b>.</p>
+
+            <p>Now enough of reminiscing because we are in the present. You just got your 3rd rejection email this week, 15th this month. You start to get down on yourself a little, your brain starts scrambling for no reason even while realizing you have only been out of school for just several months. Everything is okay, trust me.</p>
+
+            <h2 class="section-heading">Everything is okay, trust me.</h2>
+
+            <p>Not for all but for some, a sense of panic jumps out. In your mind you figured you have or be already working towards your dream job. That isn't quite where you are right now though.</p>
+
+            <p>You look at some of your colleagues you graduated with, some in the same boat as you and other excelling in their new careers. Be happy for them but do not succumb to feeling bad about yourself. What is there to feel bad about anyway you have your diploma too.</p>
+
+            <blockquote class="blockquote">Set a goal that makes you want to jump out of bed in the morning.</blockquote>
+
+            <p>You start to ask yourself in the midst of it all where did you go wrong, is there something you could have done different. You could have pursued this internship, tried a little harder in this class, joined this and this club for networking. Truth is yes there are some things that you could have done to better your chances but dwelling on the past will only hinder your growth, and in this new chapter of your life your main focus should be wisdom and growth.</p>
+
+            <h2 class="section-heading">Keep on Keeping On</h2>
+
+            <p>It will not be easy, but nothing in life worth having comes easy and you should learn to fall in love with that thought. Maybe there are some steps you need to take in order to get the job you desire.</p>
+
+            <a href="#">
+              <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
+            </a>
+            <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+
+            <p>If I could give advice it would be to truly take this time to find your passion, instead of just searching and applying for any job take a couple of months off to truly see what you want to do. My degree was in Statistics and to be completely honest I enjoyed my major and could see myself working with it in the future but found my main passion to be within Information Technology.</p>
+
+            <p>I do not have a traditional degree so I decided to look for ways to break into the sector whether that be through pursuing another degree or certifications. <br> Another key is staying optimistic and confident not just in yourself but that you will find what you are looking for.</p>
+
+            <blockquote class="blockquote">Know that you may have to take a different route towards your destination, but once you get there (and you will) it will all be worth it and just enjoy the journey in itself.</blockquote>
+
+            <p>Everything will be okay, trust me.</p>
+            <!--
+            <p>Placeholder text by
+              <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
+              <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+            -->
+<!--          </div>
+        </div>
+      </div>
+    </article>
+-->
     <hr>
+
+<p class="JSArticle">
+        Next Article 
+            <span class="click" onclick="show('Page1');">1</span> 
+            <span class="click" onclick="show('Page2');">2</span> 
+            <span class="click" onclick="show('Page3');">3</span>
+</p>
 
     <!-- Footer -->
     <footer>
