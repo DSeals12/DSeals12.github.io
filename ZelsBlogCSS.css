@@ -29,6 +29,11 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/*This is for the post.html*/
+h1,h2 {
+  text-align: center;
+}
+
 a {
   color: #212529;
   -webkit-transition: all 0.2s;
@@ -278,6 +283,10 @@ header.masthead .post-heading .meta a {
   color: #212529;
 }
 
+.post-meta {
+  text-align: center;
+}
+
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
   color: #0085A1;
@@ -378,20 +387,7 @@ form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6;
 }
 
-footer {
-  padding: 50px 0 65px;
-}
 
-footer .list-inline {
-  margin: 0;
-  padding: 0;
-}
-
-footer .copyright {
-  font-size: 14px;
-  margin-bottom: 0;
-  text-align: center;
-}
 
 .btn {
   font-size: 14px;
@@ -419,4 +415,52 @@ footer .copyright {
   padding: 25px 35px;
 }
 
+footer {
+  padding: 50px 0 65px;
+}
 
+footer  {
+  margin: 0;
+  padding: 0;
+}
+
+footer .copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+/*For the footer/social media*/
+.media {
+  /*position: absolute;
+  display: flex;
+  justify-content: right;*/
+  /*left: 50%;*/
+  margin-left: auto;
+  /*margin-right: auto;*/
+  width: 61%;
+  height: 50%;
+}
+
+.social {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  /*left: 140%;*/
+  margin-right: 10px;
+  margin-left: 10px;
+  /*padding: 10px 10px;*/
+  font-size: 44px;
+}
+
+.social:hover{
+  cursor: pointer;
+  color: red;
+}
+
+/*
+@media screen and (max-width:760px) {
+  .social{
+    font-size: 25px;
+  }
+}
+*/
