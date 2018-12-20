@@ -441,15 +441,17 @@ footer .copyright {
   /*margin-right: auto;*/
   width: 62%;
   height: 50%;
+  left: 50%;
+  right: 50%;
 }
 
 .social {
   list-style: none;
   display: inline-block;
-  position: relative;
+ position: relative;
   /*left: 140%;*/
-  margin-right: 10px;
-  margin-left: 10px;
+ /* margin-right: 10px;
+  margin-left: 10px;*/
   /*padding: 10px 10px;*/
   font-size: 44px;
 }
