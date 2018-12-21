@@ -428,30 +428,33 @@ footer {
 
 
 footer .copyright {
-  font-size: 14px;
-  margin-bottom: 0;
-  /*text-align: center;*/
+  
 }
 /*For the footer/social media*/
 
 .container1 {
-width: 1000px;
+/*width: 1000px;*/
+width: 960px;
+margin-left: auto;
+margin-right: auto;
 
 }
 
 .media {
   position: absolute;
-  left: 35%;
+  left: 30%;
+  /*display: flex;
   /*transform: translate(-53%, -50%);*/
+  /*align-items: center;*/
 }
 
 .social {
   list-style: none;
   display: inline-block;
-  /*margin:;
-  padding:;*/
-  font-size: 25px;
-
+  margin: 10px;
+  padding: 10px;
+  font-size: 35px;
+  overflow-x: hidden;
 }
 
 .social:hover{
@@ -469,9 +472,10 @@ width: 1000px;
   margin-right: 10px;
 }
 
-
+/*
 @media screen and (max-width:780px) {
   .social{
     font-size: 35px;
   }
 }
+*/
