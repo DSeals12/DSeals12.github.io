@@ -433,30 +433,25 @@ footer .copyright {
   /*text-align: center;*/
 }
 /*For the footer/social media*/
+
+.container1 {
+width: 1000px;
+
+}
+
 .media {
-  /*position: absolute;
-  display: flex;
-  justify-content: right;*/
-  /*left: 50%;*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  height: 50%;
-  /*left: 20%;
-  right: 50%;*/
-  text-align: center;
+  position: absolute;
+  left: 35%;
+  /*transform: translate(-53%, -50%);*/
 }
 
 .social {
   list-style: none;
   display: inline-block;
- position: relative;
-  /*left: 140%;*/
- /* margin-right: 10px;
-  margin-left: 10px;*/
-  /*padding: 10px 10px;*/
-  font-size: 44px;
-  z-index: 9999;
+  /*margin:;
+  padding:;*/
+  font-size: 25px;
+
 }
 
 .social:hover{
